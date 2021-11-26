@@ -60,6 +60,7 @@
 (require 'elfeed-protocol-fever)
 (require 'elfeed-protocol-newsblur)
 (require 'elfeed-protocol-owncloud)
+(require 'elfeed-protocol-theoldreader)
 (require 'elfeed-protocol-ttrss)
 
 (defgroup elfeed-protocol ()
