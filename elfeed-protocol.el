@@ -191,6 +191,9 @@ ORIG-FUNC and URL-OR-FEED are the needed arguments."
   (elfeed-protocol-register "owncloud" (list :update 'elfeed-protocol-owncloud-update
                                              :pre-tag 'elfeed-protocol-owncloud-pre-tag
                                              :pre-untag 'elfeed-protocol-owncloud-pre-untag))
+  (elfeed-protocol-register "theoldreader" (list :update 'elfeed-protocol-theoldreader-update
+                                                 :pre-tag 'elfeed-protocol-theoldreader-pre-tag
+                                                 :pre-untag 'elfeed-protocol-theoldreader-pre-untag))
   (elfeed-protocol-register "ttrss" (list :update 'elfeed-protocol-ttrss-update
                                           :pre-tag 'elfeed-protocol-ttrss-pre-tag
                                           :pre-untag 'elfeed-protocol-ttrss-pre-untag)))
@@ -207,6 +210,7 @@ ORIG-FUNC and URL-OR-FEED are the needed arguments."
   (elfeed-protocol-unregister "fever")
   (elfeed-protocol-unregister "newsblur")
   (elfeed-protocol-unregister "owncloud")
+  (elfeed-protocol-unregister "theoldreader")
   (elfeed-protocol-unregister "ttrss"))
 
 (provide 'elfeed-protocol)
