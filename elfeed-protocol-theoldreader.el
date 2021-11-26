@@ -8,7 +8,6 @@
 
 (require 'deferred)
 (require 'elfeed-protocol-theoldreader-client)
-(require 'elfeed-protocol)
 
 (defconst elfeed-protocol-theoldreader--feed-id-to-url
   (make-hash-table
